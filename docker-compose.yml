@@ -1,0 +1,12 @@
+services:
+  foundryvtt:
+    image: felddy/foundryvtt:release
+    hostname: my_foundry_host
+    container_name: foundryvtt
+    ports:
+      - "30000:30000"
+    volumes:
+      - D:/DEV-foundry/data:/data
+    environment:
+      - FOUNDRY_RELEASE_URL=<URL>
+    restart: unless-stopped
