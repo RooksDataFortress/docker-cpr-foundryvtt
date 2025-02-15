@@ -7,6 +7,8 @@ services:
       - "30000:30000"
     volumes:
       - D:/DEV-foundry/data:/data
+      - D:/DEV-foundry/foundry-zip:/source
     environment:
-      - FOUNDRY_RELEASE_URL=<URL>
+      - CONTAINER_CACHE=/source
+      - FOUNDRY_VERSION=11.315
     restart: unless-stopped
