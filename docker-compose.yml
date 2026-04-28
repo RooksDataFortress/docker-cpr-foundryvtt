@@ -10,5 +10,5 @@ services:
       - D:/DEV-foundry/foundry-zip:/source
     environment:
       - CONTAINER_CACHE=/source
-      - FOUNDRY_VERSION=11.315
+      - FOUNDRY_VERSION=12.331
     restart: unless-stopped
